@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cadastro de alunos · QRStudy</title><link rel="stylesheet" href="estilo.css">
+<header><strong>QRStudy</strong><a href="/swagger-ui/index.html">Documentação da API ↗</a></header>
+<main><h1>Cadastro de alunos</h1>
+<p id="aviso" role="status" aria-live="polite"></p>
+<div class="colunas"><section><h2 id="titulo">Novo aluno</h2>
+<form id="cadastro"><div class="campos">
+<label class="largo">Nome completo<input name="nome" required maxlength="150" autocomplete="off"></label>
+<label>Código da escola<input name="escola" type="number" min="1" required></label>
+<label>Matrícula<input name="matricula" maxlength="30" required></label>
+<label class="largo">Data de nascimento<input name="nascimento" type="date" required></label>
+<label>Série<input name="serie" maxlength="30" required></label><label>Turma<input name="turma" maxlength="30" required></label>
+<label>Turno<select name="turno"><option value="MANHA">Manhã</option><option value="TARDE">Tarde</option><option value="NOITE">Noite</option><option value="INTEGRAL">Integral</option></select></label>
+<label>Situação<select name="status"><option value="ATIVO">Ativo</option><option value="INATIVO">Inativo</option><option value="TRANSFERIDO">Transferido</option><option value="FORMADO">Formado</option></select></label>
+</div><button id="salvar">Cadastrar aluno</button> <button type="button" id="cancelar" hidden>Cancelar edição</button></form></section>
+<section><h2>Alunos cadastrados</h2><form id="busca"><label>Consultar pelo ID<input name="id" type="number" min="1" required></label><button>Consultar</button><button type="button" id="todos">Ver todos</button></form>
+<div id="lista"></div></section></div></main><script src="app.js"></script></html>
