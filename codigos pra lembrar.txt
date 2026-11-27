@@ -1,0 +1,8 @@
+4. Os códigos HTTP são a resposta do atendente
+Leia estas frases em sequência, como uma conversa:
+- 201 — “Pronto, criei a ficha da Ana. Aqui está o ID.”
+- 200 — “Encontrei. Aqui estão os dados.”
+- 204 — “Excluí. Pedido concluído.” A resposta vem sem corpo.
+- 404 — “Procurei por esse ID e não encontrei a ficha.”
+- 400 — “O nome veio em branco. Preciso que corrija o pedido.”
+- 409 — “Essa matrícula já existe nesta escola. O cadastro entrou em conflito.”
